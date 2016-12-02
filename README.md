@@ -52,9 +52,19 @@ $ cd
 $ ./motioncam.py
 ```
 
+*Note: You might have to explicitly call python3 to run it*
+```
+$ python3 ./motioncam.py
+```
+
 Ideally you will want the program to run in the background, enter the following command for this:
 ```
 $ screen -d -m -S [screen-name] [application-to-run] 
+```
+
+View a list of screens currently running:
+```
+$ screen -ls
 ```
 
 To reattach the screen use:
