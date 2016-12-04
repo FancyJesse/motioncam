@@ -80,6 +80,9 @@ You can view the captured images and logs found in the directories defined withi
 Release History
 ---------------
 
+* 0.3.1
+	* Adjusted a few files
+
 * 0.3.0
     * Initial Release
 
