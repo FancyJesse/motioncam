@@ -104,9 +104,12 @@ def motion_capture():
 	pixels1 = list(image1.getdata())
 
 	video_trigger_cnt = 0
+	capture_delay = config.CAPTURE_DELAY
 	space_available = storage_available()
 	while space_available:
-		time.sleep(config.CAPTURE_DELAY)
+		time.sleep(capture_delay)
+
+		start_time = time.time()
 
 		image2, title2 = get_image_stream()
 		pixels2 = list(image2.getdata())
@@ -133,8 +136,16 @@ def motion_capture():
 			if video_trigger_cnt == config.VIDEO_TRIGGER_LIMIT:
 				record()
 				video_trigger_cnt = 0
+				image2 = get_image_stream()[0]
+				pixels2 = list(image2.getdata())
+				time.sleep(config.CAPTURE_DELAY)
 
 			space_available = storage_available()
+
+		capture_delay = int(time.time() - start_time)
+		capture_delay = config.CAPTURE_DELAY - capture_delay
+		if capture_delay < 0:
+			capture_delay = 0
 
 		image1 = image2
 		pixels1 = pixels2
