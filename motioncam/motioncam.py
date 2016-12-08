@@ -20,13 +20,9 @@ def setup():
 		if config.LOG_DISPLAY:
 			print('DISPLAY MODE IS ON - ALL LOG DATA WILL BE DISPLAYED ON CONSOLE')
 
-		# Directory check
-		if config.DIR_LOG == None:
-			config.DIR_LOG = os.path.expanduser('~') + '/motioncam/log/'
+		# Storage directory
 		if config.DIR_CAPTURES == None:
 			config.DIR_CAPTURES = os.path.expanduser('~') + '/motioncam/captures/'
-		if not os.path.exists(config.DIR_LOG):
-			os.makedirs(config.DIR_LOG)
 		if not os.path.exists(config.DIR_CAPTURES):
 			os.makedirs(config.DIR_CAPTURES)
 		log(__name__, 'Directory Check Complete')
