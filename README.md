@@ -1,6 +1,5 @@
 MotionCam
----------
-
+========================================================================
 A quick project written in Python that utilizes a Raspberry-Pi and Camera to detect motion.
 In short, it constantly captures images and compares the pixels' RGB values to identify motion. 
 Once motion is detected, it logs the event and captures the image.
@@ -9,16 +8,14 @@ User defines thresholds and other settings via **config.py**.
 
 
 Prerequisites
--------------
-
+------------------------------------------------------------------------
 Raspberry-Pi with Camera Module
 
 Python3
 
 
 Installation
-------------
-
+------------------------------------------------------------------------
 Before the installation, be sure to update & upgrade your current packages
 ```
 $ sudo apt-get update && sudo apt-get upgrade
@@ -38,8 +35,7 @@ $ git clone https://github.com/FancyJesse/motioncam
 
 
 Usage
------
-
+------------------------------------------------------------------------
 Before executing the program, review and adjust any settings with **config.py**
 ```
 $ cd
@@ -78,8 +74,7 @@ You can view the captured images and logs found in the directories defined withi
 
 
 Release History
----------------
-
+------------------------------------------------------------------------
 * 0.3.2
 	* Updated log directory check
 
@@ -91,12 +86,10 @@ Release History
 
 
 License
--------
-
+------------------------------------------------------------------------
 See the file "LICENSE" for license information.
 
 
 Authors
--------
-
+------------------------------------------------------------------------
 FancyJesse
