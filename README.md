@@ -1,5 +1,8 @@
 MotionCam
 ========================================================================
+![status](https://img.shields.io/badge/Project%20Status-work--in--progress-green.svg)
+[![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=jesus_andrade45%40yahoo%2ecom&lc=US&item_name=CAPSS%2dFree%20Development&currency_code=USD&bn=PP%2dDonationsBF%3abtn_donateCC_LG%2egif%3aNonHosted)
+
 A quick project written in Python that utilizes a Raspberry-Pi and Camera to detect motion.
 In short, it constantly captures images and compares the pixels' RGB values to identify motion. 
 Once motion is detected, it logs the event and captures the image.
