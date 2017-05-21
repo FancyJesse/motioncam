@@ -21,12 +21,12 @@ Installation
 ------------------------------------------------------------------------
 Before the installation, be sure to update & upgrade your current packages
 ```
-$ sudo apt-get update && sudo apt-get upgrade
+$ apt-get update && apt-get upgrade
 ```
 
 Also be sure you have python-picamera library installed
 ```
-$ sudo apt-get install python-picamera
+$ apt-get install python-picamera
 ```
 
 To download the MotionCam project use the following:
@@ -40,18 +40,8 @@ $ git clone https://github.com/FancyJesse/motioncam
 Usage
 ------------------------------------------------------------------------
 Before executing the program, review and adjust any settings with **config.py**
-```
-$ cd
-$ nano config.py
-```
 
 To execute the program, simply call **motioncam.py**
-```
-$ cd
-$ ./motioncam.py
-```
-
-*Note: You might have to explicitly call python3 to run it*
 ```
 $ python3 ./motioncam.py
 ```
