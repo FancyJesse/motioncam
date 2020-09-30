@@ -33,7 +33,7 @@ To download the MotionCam project use the following:
 
 git
 ```
-$ git clone https://github.com/FancyJesse/motioncam
+$ git clone https://github.com/idle-user/motioncam
 ```
 
 
