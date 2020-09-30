@@ -85,4 +85,4 @@ See the file "LICENSE" for license information.
 
 Authors
 ------------------------------------------------------------------------
-FancyJesse
+idle-user
